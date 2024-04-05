@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TypeScript | User DataBase</title>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        form > label {
+            display: flex;
+            justify-content: space-between;
+        }
+
+
+        form > * {
+            margin: 5px;
+            width: 350px;
+
+        }
+
+        form input {
+            background: white;
+        }
+
+        .alert {
+            animation: alert 0.4s linear
+        }
+
+        @keyframes alert {
+            0% {
+                background: white;
+            }
+            30% {
+                background: #ff8080;
+            }
+            100% {
+                background: white;
+            }
+
+        }
+
+        .user {
+            display: flex;
+            width: 400px;
+            justify-content: space-between;
+            margin: 5px 0;
+            height: 51px;
+            align-items: center;
+        }
+
+        .user > div {
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        .user button {
+            height: 100%;
+        }
+
+        .user_container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+<form name="user_form">
+    <label>Please enter your name:<input type="text" name="userName" placeholder="Name"></label>
+    <label>Please enter your age:<input type="text" name="userAge" placeholder="Age"></label>
+    <button class="save_update">Save</button>
+</form>
+<hr>
+<div class="user_container"></div>
+
+<script src="./js/users.js"></script>
+</body>
+</html>
